@@ -1,0 +1,354 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62.5%;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 400px;
+    text-align: center;
+}
+header img{
+    width: 100%;
+    height: 40vh;
+    max-width: 1000px;
+    align-self: center;
+}
+.header-title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    align-self: center;
+}
+.button-price {
+    position: absolute;
+    left: calc(50% - 118px);
+    display: block; 
+    margin-top: -60px;
+    padding: 15px; 
+    width: 229px;
+    height: 48px;
+    background-color:#E8EAEA;
+    box-shadow: 0px 4px 8px rgba(89 73 30 20);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.header-title-container h1{
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: black;
+}
+.header-title-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #757575;
+    margin-top: 20px;
+}
+.button-price span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url(/imagen/icons/down-arrow.svg);
+}
+.service-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #080C0C ;
+}
+.service-detail-title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
+.service-detail-title h2{
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: #f1f8f8;
+}
+.service-detail-title p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.service-detail-card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: auto;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #2E3434;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 16);
+}
+.service-detail-card .tareas{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(/imagen/icons/libro-abierto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service-product-title {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #f1f8f8;
+}
+.service-product-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.service-detail-card .ingles{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(/imagen/icons/idioma-en-ingles.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service-detail-card .psico{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(/imagen/icons/salud-mental.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service-detail-card .reloj{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(/imagen/icons/reloj.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service-detail-card .price{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(/imagen/icons/dolar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service-detail-card .computadora{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(/imagen/icons/ordenador-portatil.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.plans-title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans-title h2{
+    padding-top: 50px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: black;
+}
+.plans-title .plans-par {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans-container-slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container-card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 10px 0 ;
+    padding: 0 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(80 73 30 / 16%);
+}
+.plans-tarea{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px;
+    background-color: royalblue;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.plan-card-title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan-card-price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+.plan-card-price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+.plan-card-saving {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #757575;
+}
+.plan-card-btn-tarea {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid royalblue;
+    border-radius: 4px;
+    font-family: "DM Sans",sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+.plans-ingles{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px;
+    background-color: green;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.plan-card-btn-ingles {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid green;
+    border-radius: 4px;
+    font-family: "DM Sans",sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+.plans-terapia{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -15px;
+    padding: 6px;
+    background-color: pink;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.plan-card-btn-terapia {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid pink;
+    border-radius: 4px;
+    font-family: "DM Sans",sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    padding-left: 10px;
+    background-color: lightseagreen;
+}
+footer .left ul {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left p{
+    font-size: 1.4rem;
+}
+.left li{
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    color: #ffffff;
+}
